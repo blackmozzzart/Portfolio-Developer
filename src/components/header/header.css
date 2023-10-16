@@ -50,9 +50,18 @@ header {
 }
 
 .me img {
-    height: 50vh;
-    width: 32vw;
-    margin: -120px -135px;
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 10rem);
+    margin-top: -8rem;
+
+    transition: transform 0.3s ease;
+}
+
+.me img:hover {
+    transform: scale(1.2);
+    background-color: var(--color-primary);
 }
 
 /* =============== SCROLL DOWN ===============  */
@@ -70,12 +79,6 @@ header {
     header {
         height: 68vh;
     }
-
-    .me img {
-        height: 35vh;
-        width: 39vw;
-        margin: -100px 0;
-    }
 }
 
 /* =============== MEDIA QUERIES (SMALL DEVICES) ===============  */
@@ -87,11 +90,5 @@ header {
     .header__socials,
     .scroll__down {
         display: none;
-    }
-
-    .me img {
-        height: 50vh;
-        width: 75vw;
-        margin: -100px 5px;
     }
 }
